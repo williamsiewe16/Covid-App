@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">956796457729-c2rvbt54e1mbt6ll55bokk893256k61p.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://vivlio-e7a14.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">956796457729</string>
+    <string name="google_api_key" translatable="false">AIzaSyBuWb7sGYFu6h6BaXtxHVgiBoauE5MuV6I</string>
+    <string name="google_app_id" translatable="false">1:956796457729:android:be095d12dc24d6aa7ec100</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBuWb7sGYFu6h6BaXtxHVgiBoauE5MuV6I</string>
+    <string name="google_storage_bucket" translatable="false">vivlio-e7a14.appspot.com</string>
+    <string name="project_id" translatable="false">vivlio-e7a14</string>
+</resources>

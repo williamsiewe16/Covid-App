@@ -1,0 +1,420 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.projettransverse.groupe304.covidapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:5:5-77
+12-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:5:22-75
+13
+14    <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
+15    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+15-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:8:5-75
+15-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:8:22-72
+16    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+16-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:9:5-80
+16-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:9:22-77
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:10:5-75
+17-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:10:22-72
+18    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+18-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:11:5-74
+18-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:11:22-71
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:12:5-66
+19-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:12:22-63
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:13:5-80
+20-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:13:22-77
+21
+22    <!-- These require runtime permissions on M -->
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:16:5-81
+23-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:16:22-78
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:17:5-79
+24-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:17:22-76
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:18:5-65
+25-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:18:22-62
+26    <uses-permission android:name="android.permission.READ_CONTACTS" />
+26-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:19:5-72
+26-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:19:22-69
+27    <uses-permission android:name="android.permission.READ_CALENDAR" />
+27-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:20:5-72
+27-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:20:22-69
+28    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+28-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:21:5-73
+28-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:21:22-70
+29    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+29-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:22:5-80
+29-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:22:22-77
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+30-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:23:5-71
+30-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:23:22-68
+31    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+31-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:24:5-81
+31-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:24:22-78
+32    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+32-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:25:5-73
+32-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:25:22-70
+33    <uses-permission android:name="android.permission.CALL_PHONE" />
+33-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:26:5-69
+33-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:26:22-66
+34
+35    <!-- Required to access Google Play Licensing -->
+36    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+36-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
+36-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-70
+37    <!--
+38         Required to keep CPU alive while downloading files
+39        (NOT to keep screen awake)
+40    -->
+41    <uses-permission android:name="android.permission.WAKE_LOCK" />
+41-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+41-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-65
+42    <!--
+43         Required to poll the state of the network connection
+44        and respond to changes
+45    -->
+46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required to check whether Wi-Fi is enabled -->
+46-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-79
+46-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:22-76
+47    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+47-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
+47-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:22-73
+48    <uses-permission android:name="android.permission.STORAGE" />
+48-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-66
+48-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-63
+49    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+49-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
+49-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
+50
+51    <uses-feature
+51-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+52        android:glEsVersion="0x00020000"
+52-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+53        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+53-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+54    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+54-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+54-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+55    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+56    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+57    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+58    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+59    <!-- for Samsung -->
+60    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+61    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+62    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+63    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+64    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+65    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+66    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+67    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+68    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+69    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+70    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+71    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+72    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+73    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+74    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+74-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+74-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+75    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+75-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+75-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\e68e0e1475c383dd8f1ad00d8d335bb6\ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+76    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+76-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+76-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+77    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" /> <!-- END OPTIONAL PERMISSIONS -->
+77-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+77-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+78    <application
+78-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:30:5-54:19
+79        android:name="com.projettransverse.groupe304.covidapp.MainApplication"
+79-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:31:7-38
+80        android:allowBackup="false"
+80-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:35:7-34
+81        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+81-->[androidx.core:core:1.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7c7c51289a284f7ac6127e81fcdb891f\core-1.1.0\AndroidManifest.xml:24:18-86
+82        android:debuggable="true"
+83        android:icon="@mipmap/logo"
+83-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:33:7-34
+84        android:label="@string/app_name"
+84-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:32:7-39
+85        android:roundIcon="@mipmap/logo"
+85-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:34:7-39
+86        android:theme="@style/AppTheme" >
+86-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:36:7-38
+87        <activity
+87-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:37:7-46:18
+88            android:name="com.projettransverse.groupe304.covidapp.MainActivity"
+88-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:38:9-37
+89            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+89-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:40:9-79
+90            android:label="@string/app_name"
+90-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:39:9-41
+91            android:windowSoftInputMode="adjustResize" >
+91-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:41:9-51
+92            <intent-filter>
+92-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:42:9-45:25
+93                <action android:name="android.intent.action.MAIN" />
+93-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:43:13-65
+93-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:43:21-62
+94
+95                <category android:name="android.intent.category.LAUNCHER" />
+95-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:44:13-73
+95-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:44:23-70
+96            </intent-filter>
+97        </activity>
+98        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+98-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:47:7-84
+98-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:47:17-81
+99
+100        <meta-data
+100-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:48:9-50:62
+101            android:name="com.google.android.geo.API_KEY"
+101-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:49:17-62
+102            android:value="@string/google_maps_api_key" />
+102-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:50:17-60
+103        <meta-data
+103-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:51:9-53:58
+104            android:name="com.facebook.sdk.ApplicationId"
+104-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:52:17-62
+105            android:value="@string/facebook_app_id" />
+105-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:53:17-56
+106
+107        <provider
+107-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
+108            android:name="com.RNFetchBlob.Utils.FileProvider"
+108-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
+109            android:authorities="com.projettransverse.groupe304.covidapp.provider"
+109-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
+110            android:exported="false"
+110-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
+111            android:grantUriPermissions="true" >
+111-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
+112            <meta-data
+112-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+113                android:name="android.support.FILE_PROVIDER_PATHS"
+113-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
+114                android:resource="@xml/provider_paths" />
+114-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+115        </provider>
+116        <provider
+116-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
+117            android:name="expo.modules.filesystem.FileSystemFileProvider"
+117-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+118            android:authorities="com.projettransverse.groupe304.covidapp.FileSystemFileProvider"
+118-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+119            android:exported="false"
+119-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+120            android:grantUriPermissions="true" >
+120-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+121            <meta-data
+121-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+122                android:name="android.support.FILE_PROVIDER_PATHS"
+122-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
+123                android:resource="@xml/file_system_provider_paths" />
+123-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+124        </provider>
+125
+126        <service
+126-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+127            android:name="expo.modules.location.services.LocationTaskService"
+127-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
+128            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+128-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+129        <uses-library
+129-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+130            android:name="org.apache.http.legacy"
+130-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+131            android:required="false" />
+131-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+132        <!--
+133             FirebaseMessagingService performs security checks at runtime,
+134             but set to not exported to explicitly avoid allowing another app to call it.
+135        -->
+136        <service
+136-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+137            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+137-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+139            android:exported="false" >
+139-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+140            <intent-filter android:priority="-500" >
+140-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
+140-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
+141                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+141-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:17-78
+141-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:25-75
+142            </intent-filter>
+143        </service>
+144        <service
+144-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:36:9-42:19
+145            android:name="com.google.firebase.components.ComponentDiscoveryService"
+145-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:37:13-84
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+147            android:exported="false" >
+147-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:38:13-37
+148            <meta-data
+148-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+149                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+149-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+152                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+152-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+155                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+155-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+158                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+158-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+160        </service>
+161
+162        <receiver
+162-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+163            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+163-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+164            android:exported="true"
+164-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+165            android:permission="com.google.android.c2dm.permission.SEND" >
+165-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+166            <intent-filter>
+166-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+167-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
+167-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
+168            </intent-filter>
+169        </receiver>
+170
+171        <activity
+171-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+172            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+172-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+173            android:exported="false"
+173-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+175
+176        <meta-data
+176-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:8:9-10:69
+177            android:name="com.google.android.gms.version"
+177-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:9:13-58
+178            android:value="@integer/google_play_services_version" />
+178-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:10:13-66
+179
+180        <service
+180-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+181            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+181-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+182            android:exported="false" >
+182-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+183            <meta-data
+183-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+184                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+184-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+185                android:value="cct" />
+185-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+186        </service>
+187        <service
+187-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+188-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+189            android:exported="false"
+189-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+190            android:permission="android.permission.BIND_JOB_SERVICE" >
+190-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+191        </service>
+192
+193        <receiver
+193-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+194            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+194-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+195            android:exported="false" />
+195-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+196
+197        <provider
+197-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+198            android:name="com.google.firebase.provider.FirebaseInitProvider"
+198-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+199            android:authorities="com.projettransverse.groupe304.covidapp.firebaseinitprovider"
+199-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+200            android:exported="false"
+200-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+201            android:initOrder="100" />
+201-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+202
+203        <service
+203-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+204            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+204-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+205            android:exported="false" />
+205-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+206        <service
+206-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+207            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+207-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+208            android:exported="false" />
+208-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+209        <service
+209-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+210            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+210-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+211            android:exported="false" />
+211-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+212    </application>
+213
+214</manifest>

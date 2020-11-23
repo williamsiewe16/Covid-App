@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\loico\\.gradle\\caches\\transforms-2\\files-2.1\\a922a24d2fb9838cd4d323fe087ca8a6\\appcompat-1.1.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
