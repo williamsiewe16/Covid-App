@@ -1,5 +1,6 @@
-#Mon Nov 23 12:55:10 CET 2020
+#Mon Nov 23 21:01:30 CET 2020
 base.10=C\:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_16.dex
+path.37=classes_35.dex
 path.36=classes_9.dex
 path.35=classes_8.dex
 path.34=classes_7.dex
@@ -31,6 +32,7 @@ path.21=classes_26.dex
 path.7=classes_13.dex
 path.20=classes_25.dex
 path.6=classes_12.dex
+renamed.37=classes38.dex
 path.5=classes_11.dex
 renamed.36=classes37.dex
 path.4=classes_10.dex
@@ -84,6 +86,7 @@ renamed.13=classes14.dex
 renamed.12=classes13.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
+base.37=C\:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_35.dex
 base.36=C\:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_9.dex
 base.35=C\:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_8.dex
 base.34=C\:\\Users\\loico\\Documents\\France\\Efrei\\Cours\\Semestre 5\\UE - Projet transverse - 3\\covid-App\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_7.dex

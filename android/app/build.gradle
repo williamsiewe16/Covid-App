@@ -125,7 +125,7 @@ compileSdkVersion 26
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.projettransverse.groupe304.covidapp"
+        applicationId "com.projettransverse.groupe304.efrovid"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -169,6 +169,7 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false);
 
 dependencies {
+    implementation project(':react-native-i18n')
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-snackbar')

@@ -80,4 +80,6 @@ target 'siewapp' do
 
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
 end

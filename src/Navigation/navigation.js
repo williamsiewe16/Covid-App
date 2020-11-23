@@ -5,6 +5,7 @@ import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom
 import React from 'react'
 import {Image, Dimensions, StyleSheet, View} from 'react-native'
 import Accueil from "../Pages/Accueil";
+import Onboarding from "../Pages/Onboarding";
 import { FontAwesome, Ionicons } from '@expo/vector-icons'
 
 const device_width = Dimensions.get('window').width
@@ -21,7 +22,7 @@ let AccueilNavigation = createStackNavigator({
     },
 }, {headerLayoutPreset : 'center'})
 
-let AppNavigation = createMaterialBottomTabNavigator({
+let BottomNavigation = createMaterialBottomTabNavigator({
     Accueil: {
         screen: Accueil,
         navigationOptions: {
@@ -55,22 +56,17 @@ let AppNavigation = createMaterialBottomTabNavigator({
 })
 
 
-/*let AppNavigation = createSwitchNavigator({
-    test: Test,
-    login: Login,
-    register: Register,
+let AppNavigation = createSwitchNavigator({
     onBoarding: Onboarding,
-    Residence: Residence,
     Accueil: createStackNavigator({
-        Accueil: AccueilBottomNavigation,
-        Search: Search,
+        Accueil: BottomNavigation,
     },{
         headerMode: "none"
     })
 },    {
     defaultNavigationOptions: {},
-    initialRouteName: 'Residence'
-})*/
+    initialRouteName: 'onBoarding'
+})
 
 
 const styles = StyleSheet.create({

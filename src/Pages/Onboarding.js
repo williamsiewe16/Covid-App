@@ -14,6 +14,8 @@ import {
 import OnBoarding from "react-native-onboarding-swiper"
 import axios from 'axios'
 import BottomIcon from "../Components/BottomIcon";
+import connect from "react-redux/lib/connect/connect";
+import i18n from "../i18n/i18n"
 
 console.disableYellowBox = true
 
@@ -25,21 +27,29 @@ class Onboarding extends React.Component {
 
     constructor(props) {
         super(props)
+        if(!this.props.user.firstLaunch) this.props.navigation.navigate("Accueil")
+
         this.pages=[{
             backgroundColor: '#ffffff',
-            image: <BottomIcon icon={require('../../assets/images/logo.png')} />,
-            title: 'Onboarding',
-            subtitle: 'Done with React Native Onboarding Swiper',
+            image: <BottomIcon icon={require('../../assets/images/news.png')} />,
+            title: 'News',
+            subtitle: i18n.t("onboardingNews"),
         },{
-            title: 'Onboarding',
+            title: 'Stats',
             backgroundColor: '#ffffff',
-            image: <BottomIcon icon={require('../../assets/images/home-run.png')} />,
-            subtitle: 'Done with React Native Onboarding Swiper',
+            image: <BottomIcon icon={require('../../assets/images/stats.png')} />,
+            subtitle: i18n.t("onboardingStats"),
+        },{
+            title: 'Infos',
+            backgroundColor: '#ffffff',
+            image: <BottomIcon icon={require('../../assets/images/social.png')} />,
+            subtitle: i18n.t("onboardingInfos"),
         }]
     }
 
     _onDone = () => {
-      this.props.navigation.navigate('Accueil')
+        this.props.dispatch({type: "FIRST_LAUNCH"})
+        this.props.navigation.navigate('Accueil')
     }
 
     render() {
@@ -48,6 +58,7 @@ class Onboarding extends React.Component {
                 pages={this.pages} style={styles.main_container}
                 onDone={this._onDone}
                 onSkip={this._onDone}
+                bottomBarHighlight={false}
             />
         )
     }
@@ -80,4 +91,10 @@ const styles = StyleSheet.create({
 
 })
 
-export default Onboarding
+const mapStateToProps =  (state) => {
+    return {
+        user: state.userReducer,
+    }
+}
+
+export  default  connect(mapStateToProps)(Onboarding)

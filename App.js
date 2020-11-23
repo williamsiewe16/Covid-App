@@ -7,9 +7,17 @@ import Navigation from "./src/Navigation/navigation"
 //Persister le store
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/es/integration/react'
+import { setCustomText } from 'react-native-global-props';
 console.disableYellowBox = true
 
 export default function App() {
+    const customTextProps = {
+        style: {
+            fontFamily: "Raleway-Regular"
+        }
+    }
+    setCustomText(customTextProps)
+
   let persistor = persistStore(Store)
   return (
       <Provider store={Store}>
@@ -22,7 +30,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-      fontFamily: "Raleway",
+      fontFamily: "Raleway-Regular",
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',

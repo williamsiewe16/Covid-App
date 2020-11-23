@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
         padding: 3.5*device_width/100,
     },
     icon: {
-        width: 6.5*device_width/100,
-        height: 6.5*device_width/100
+        width: 65*device_width/100,
+        height: 65*device_width/100
     }
 })
 

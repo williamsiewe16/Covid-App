@@ -1,19 +1,19 @@
 
-const initialState = {}
+const initialState = {firstLaunch: true, theme: {}}
 
 function setUserInfos(state=initialState, action){
     let nexState
     switch (action.type){
-        case 'CONNECT':
-            nexState = action.value
+        case 'FIRST_LAUNCH':
+            nexState = {firstLaunch: false}
             return nexState || state
 
-        case 'DISCONNECT':
-            nexState = {}
+        case 'CHANGE_THEME':
+            nexState = {firstLaunch: false}
             return nexState || state
 
         default:
-            return state
+            return {firstLaunch: true, theme: {}}
     }
 }
 

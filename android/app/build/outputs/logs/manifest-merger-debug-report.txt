@@ -4,6 +4,7 @@ ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet tr
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:1:1-56:12
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:1:1-56:12
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:1:1-56:12
+MERGED from [:react-native-i18n] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-i18n\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-linear-gradient] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-snackbar] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-snackbar\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -116,7 +117,7 @@ INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:1:1-56:12
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:1:1-56:12
 	package
-		ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:2:5-54
+		ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:2:5-53
 		INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -309,7 +310,7 @@ MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\cach
 		ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:36:7-38
 	android:name
 		ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:31:7-38
-activity#com.projettransverse.groupe304.covidapp.MainActivity
+activity#com.projettransverse.groupe304.efrovid.MainActivity
 ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:37:7-46:18
 	android:label
 		ADDED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:39:9-41
@@ -349,6 +350,8 @@ uses-sdk
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-i18n] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-i18n\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-i18n] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-i18n\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-linear-gradient] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41

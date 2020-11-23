@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.projettransverse.groupe304.covidapp"
+3    package="com.projettransverse.groupe304.efrovid"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -170,7 +170,7 @@
 77-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
 78    <application
 78-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:30:5-54:19
-79        android:name="com.projettransverse.groupe304.covidapp.MainApplication"
+79        android:name="com.projettransverse.groupe304.efrovid.MainApplication"
 79-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:31:7-38
 80        android:allowBackup="false"
 80-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:35:7-34
@@ -187,7 +187,7 @@
 86-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:36:7-38
 87        <activity
 87-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:37:7-46:18
-88            android:name="com.projettransverse.groupe304.covidapp.MainActivity"
+88            android:name="com.projettransverse.groupe304.efrovid.MainActivity"
 88-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:38:9-37
 89            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
 89-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:40:9-79
@@ -227,7 +227,7 @@
 107-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
 108            android:name="com.RNFetchBlob.Utils.FileProvider"
 108-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
-109            android:authorities="com.projettransverse.groupe304.covidapp.provider"
+109            android:authorities="com.projettransverse.groupe304.efrovid.provider"
 109-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
 110            android:exported="false"
 110-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
@@ -244,7 +244,7 @@
 116-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
 117            android:name="expo.modules.filesystem.FileSystemFileProvider"
 117-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
-118            android:authorities="com.projettransverse.groupe304.covidapp.FileSystemFileProvider"
+118            android:authorities="com.projettransverse.groupe304.efrovid.FileSystemFileProvider"
 118-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
 119            android:exported="false"
 119-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
@@ -390,7 +390,7 @@
 197-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
 198            android:name="com.google.firebase.provider.FirebaseInitProvider"
 198-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-199            android:authorities="com.projettransverse.groupe304.covidapp.firebaseinitprovider"
+199            android:authorities="com.projettransverse.groupe304.efrovid.firebaseinitprovider"
 199-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
 200            android:exported="false"
 200-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37

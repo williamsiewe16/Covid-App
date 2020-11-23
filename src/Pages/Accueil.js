@@ -38,13 +38,6 @@ class Accueil extends React.Component {
         }
     }
 
-    _search = (data) => {
-        if(data.nameOrPlace != ""){
-            this.props.dispatch({type: "SET_ALL_INFOS", value: data})
-             setTimeout(() => this.props.navigation.navigate('Search'), 500)
-        }
-    }
-
     render() {
             return (
                 <View>
@@ -102,8 +95,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps =  (state) => {
     return {
-        auth: state.userReducer,
-        search: state.searchReducer,
+        user: state.userReducer,
     }
 }
 

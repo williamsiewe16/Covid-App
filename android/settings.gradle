@@ -1,4 +1,6 @@
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+include ':react-native-i18n'
+project(':react-native-i18n').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-i18n/android')
 include ':react-native-linear-gradient'
 project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
 include ':react-native-vector-icons'
@@ -25,6 +27,6 @@ include ':react-native-gesture-handler'
 project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
 includeUnimodulesProjects()
 
-rootProject.name = 'Covid App'
+rootProject.name = 'Efro-Vid'
 
 include ':app'
