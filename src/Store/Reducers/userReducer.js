@@ -13,7 +13,7 @@ function setUserInfos(state=initialState, action){
             return nexState || state
 
         default:
-            return {firstLaunch: true, theme: {}}
+            return state
     }
 }
 
