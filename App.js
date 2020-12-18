@@ -13,7 +13,8 @@ console.disableYellowBox = true
 export default function App() {
     const customTextProps = {
         style: {
-            fontFamily: "Raleway-Regular"
+            fontFamily: "Raleway-Regular",
+            color: "black"
         }
     }
     setCustomText(customTextProps)

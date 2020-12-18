@@ -82,4 +82,6 @@ target 'siewapp' do
 
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
 end

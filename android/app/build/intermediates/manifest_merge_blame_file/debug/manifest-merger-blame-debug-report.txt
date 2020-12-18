@@ -107,8 +107,8 @@
 53        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 53-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
 54    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
-54-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
-54-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+54-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:26:5-82
+54-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:26:22-79
 55    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
 56    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
 57    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
@@ -224,197 +224,226 @@
 105-->C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\android\app\src\main\AndroidManifest.xml:53:17-56
 106
 107        <provider
-107-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
-108            android:name="com.RNFetchBlob.Utils.FileProvider"
-108-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
-109            android:authorities="com.projettransverse.groupe304.efrovid.provider"
-109-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
+107-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+108            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+108-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+109            android:authorities="com.projettransverse.groupe304.efrovid.fileprovider"
+109-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
 110            android:exported="false"
-110-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
+110-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 111            android:grantUriPermissions="true" >
-111-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
+111-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
 112            <meta-data
-112-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+112-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
 113                android:name="android.support.FILE_PROVIDER_PATHS"
-113-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
-114                android:resource="@xml/provider_paths" />
-114-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+113-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+114                android:resource="@xml/file_provider_paths" />
+114-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
 115        </provider>
 116        <provider
-116-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
-117            android:name="expo.modules.filesystem.FileSystemFileProvider"
-117-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
-118            android:authorities="com.projettransverse.groupe304.efrovid.FileSystemFileProvider"
-118-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+116-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
+117            android:name="com.RNFetchBlob.Utils.FileProvider"
+117-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
+118            android:authorities="com.projettransverse.groupe304.efrovid.provider"
+118-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
 119            android:exported="false"
-119-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+119-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
 120            android:grantUriPermissions="true" >
-120-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+120-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
 121            <meta-data
-121-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+121-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
 122                android:name="android.support.FILE_PROVIDER_PATHS"
-122-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
-123                android:resource="@xml/file_system_provider_paths" />
-123-->[:rn-fetch-blob] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+122-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+123                android:resource="@xml/provider_paths" />
+123-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
 124        </provider>
-125
-126        <service
-126-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
-127            android:name="expo.modules.location.services.LocationTaskService"
-127-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
-128            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
-128-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
-129        <uses-library
-129-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
-130            android:name="org.apache.http.legacy"
-130-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
-131            android:required="false" />
-131-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
-132        <!--
-133             FirebaseMessagingService performs security checks at runtime,
-134             but set to not exported to explicitly avoid allowing another app to call it.
-135        -->
-136        <service
-136-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
-137            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-137-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
-138            android:directBootAware="true"
-138-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
-139            android:exported="false" >
-139-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
-140            <intent-filter android:priority="-500" >
-140-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
-140-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
-141                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-141-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:17-78
-141-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:33:25-75
-142            </intent-filter>
-143        </service>
-144        <service
-144-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:36:9-42:19
-145            android:name="com.google.firebase.components.ComponentDiscoveryService"
-145-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:37:13-84
-146            android:directBootAware="true"
-146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-147            android:exported="false" >
-147-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:38:13-37
-148            <meta-data
-148-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
-149                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-149-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
-150                android:value="com.google.firebase.components.ComponentRegistrar" />
-150-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a5f9dd961cf6bb081037c5f2f4626b10\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
-151            <meta-data
-151-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
-152                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-152-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
-153                android:value="com.google.firebase.components.ComponentRegistrar" />
-153-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
-154            <meta-data
-154-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
-155                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-155-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
-156                android:value="com.google.firebase.components.ComponentRegistrar" />
-156-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a47c9ae49fb7b6fb728c84d1103baa55\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+125        <provider
+125-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
+126            android:name="expo.modules.filesystem.FileSystemFileProvider"
+126-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+127            android:authorities="com.projettransverse.groupe304.efrovid.FileSystemFileProvider"
+127-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+128            android:exported="false"
+128-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+129            android:grantUriPermissions="true" >
+129-->[:expo-file-system] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+130            <meta-data
+130-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+131                android:name="android.support.FILE_PROVIDER_PATHS"
+131-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+132                android:resource="@xml/file_system_provider_paths" />
+132-->[:react-native-webview] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+133        </provider>
+134
+135        <service
+135-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+136            android:name="expo.modules.location.services.LocationTaskService"
+136-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
+137            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+137-->[:expo-location] C:\Users\loico\Documents\France\Efrei\Cours\Semestre 5\UE - Projet transverse - 3\covid-App\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+138        <uses-library
+138-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+139            android:name="org.apache.http.legacy"
+139-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+140            android:required="false" />
+140-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\11355f97373ea629ce15e11e2c6fa181\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+141        <!--
+142             FirebaseMessagingService performs security checks at runtime,
+143             but set to not exported to explicitly avoid allowing another app to call it.
+144        -->
+145        <service
+145-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+146            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+146-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+149            <intent-filter android:priority="-500" >
+149-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:32:13-34:29
+149-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:32:28-51
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:33:17-78
+150-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:33:25-75
+151            </intent-filter>
+152        </service>
+153        <service
+153-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:36:9-42:19
+154            android:name="com.google.firebase.components.ComponentDiscoveryService"
+154-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:37:13-84
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+156            android:exported="false" >
+156-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:38:13-37
 157            <meta-data
-157-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
-158                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-158-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+157-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+158                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+158-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
 159                android:value="com.google.firebase.components.ComponentRegistrar" />
-159-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\34b6403b7341470f03a83743987d2375\firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
-160        </service>
-161
-162        <receiver
-162-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
-163            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-163-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
-164            android:exported="true"
-164-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
-165            android:permission="com.google.android.c2dm.permission.SEND" >
-165-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
-166            <intent-filter>
-166-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
-167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-167-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:42:17-81
-167-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\bf19cce94bc753502277c1baeba1da7d\firebase-iid-21.0.0\AndroidManifest.xml:42:25-78
-168            </intent-filter>
-169        </receiver>
-170
-171        <activity
-171-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-172            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-172-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-173            android:exported="false"
-173-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-174-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-175
-176        <meta-data
-176-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:8:9-10:69
-177            android:name="com.google.android.gms.version"
-177-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:9:13-58
-178            android:value="@integer/google_play_services_version" />
-178-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:10:13-66
-179
-180        <service
-180-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
-181            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-181-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
-182            android:exported="false" >
-182-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
-183            <meta-data
-183-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
-184                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-184-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
-185                android:value="cct" />
-185-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\af3d9875605108e549ad0df7e61bcc6b\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
-186        </service>
-187        <service
-187-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
-188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-188-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+159-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0a9740a501669c86abb6712a66c6b7b1\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+160            <meta-data
+160-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+161                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+161-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+162                android:value="com.google.firebase.components.ComponentRegistrar" />
+162-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+163            <meta-data
+163-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\58450113142395ce3d530fdc9cde9a49\firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+164                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+164-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\58450113142395ce3d530fdc9cde9a49\firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\58450113142395ce3d530fdc9cde9a49\firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+166            <meta-data
+166-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\89f529535dcdb6d3f76cdebc2bb46f0d\firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+167                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+167-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\89f529535dcdb6d3f76cdebc2bb46f0d\firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\89f529535dcdb6d3f76cdebc2bb46f0d\firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+169            <!--
+170                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+171                clients to use it as well, by defining this registrar in their own core/common library.
+172            -->
+173            <meta-data
+173-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+174                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+174-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+176        </service>
+177
+178        <receiver
+178-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+179            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+179-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+180            android:exported="true"
+180-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+181            android:permission="com.google.android.c2dm.permission.SEND" >
+181-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+182            <intent-filter>
+182-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+183                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+183-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:42:17-81
+183-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\7b6b4a2f9f9c88f13586c0e0ed0c7fbf\firebase-iid-21.0.1\AndroidManifest.xml:42:25-78
+184            </intent-filter>
+185        </receiver>
+186
+187        <activity
+187-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+188            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+188-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 189            android:exported="false"
-189-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
-190            android:permission="android.permission.BIND_JOB_SERVICE" >
-190-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
-191        </service>
-192
-193        <receiver
-193-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
-194            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-194-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
-195            android:exported="false" />
-195-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\b7664e4e9b23fecb471d9769880d695a\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
-196
-197        <provider
-197-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-198            android:name="com.google.firebase.provider.FirebaseInitProvider"
-198-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-199            android:authorities="com.projettransverse.groupe304.efrovid.firebaseinitprovider"
-199-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-200            android:exported="false"
-200-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-201            android:initOrder="100" />
-201-->[com.google.firebase:firebase-common:19.3.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\cfe9ac8a17dfed6180ab2d6ae240d883\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-202
+189-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+190            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+190-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\977f5f69cbc0be37d9c8acd2da5f5667\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+191
+192        <meta-data
+192-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:8:9-10:69
+193            android:name="com.google.android.gms.version"
+193-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:9:13-58
+194            android:value="@integer/google_play_services_version" />
+194-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\4eb0628bb33659144fd134da4a1ccca7\jetified-android-maps-utils-0.5\AndroidManifest.xml:10:13-66
+195
+196        <service
+196-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+197            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+197-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+198            android:exported="false" >
+198-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+199            <meta-data
+199-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+200                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+200-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+201                android:value="cct" />
+201-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\0d5b9920fd832504b6c8601d45045120\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+202        </service>
 203        <service
-203-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
-204            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-204-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
-205            android:exported="false" />
-205-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
-206        <service
-206-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
-207            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-207-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
-208            android:exported="false" />
-208-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
-209        <service
-209-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
-210            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-210-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+203-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+204            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+204-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+205            android:exported="false"
+205-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+206            android:permission="android.permission.BIND_JOB_SERVICE" >
+206-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+207        </service>
+208
+209        <receiver
+209-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+210-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
 211            android:exported="false" />
-211-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
-212    </application>
-213
-214</manifest>
+211-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\9643fb70c58430fd83613ca78a9a5fbb\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+212
+213        <provider
+213-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+214            android:name="com.google.firebase.provider.FirebaseInitProvider"
+214-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+215            android:authorities="com.projettransverse.groupe304.efrovid.firebaseinitprovider"
+215-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+216            android:directBootAware="true"
+216-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+217            android:exported="false"
+217-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+218            android:initOrder="100" />
+218-->[com.google.firebase:firebase-common:19.5.0] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\a2b027c535c5e6cfe55d75fc1569dfc1\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+219
+220        <service
+220-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+221            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+221-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+222            android:exported="false" />
+222-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+223        <service
+223-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+224            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+224-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+225            android:exported="false" />
+225-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+226        <service
+226-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+227            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+227-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+228            android:exported="false" />
+228-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\loico\.gradle\caches\transforms-2\files-2.1\114c9e1bb1225b47fc8d135707ee796f\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+229    </application>
+230
+231</manifest>
