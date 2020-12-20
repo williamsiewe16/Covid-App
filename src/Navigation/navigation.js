@@ -64,7 +64,7 @@ let InfosNavigation = createStackNavigator({
 
 let AppNavigation = createSwitchNavigator({
     test: createDrawerNavigator({
-        stats: StatsNavigation, news: NewsNavigation, infos: InfosNavigation,
+        stats: StatsNavigation, news: Accueil /*NewsNavigation*/, infos: InfosNavigation,
     }, {
         contentComponent: props => (
             <SafeAreaView style={{flex: 1}}>
