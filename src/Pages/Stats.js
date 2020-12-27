@@ -16,7 +16,7 @@ import {VictoryPie,VictoryChart, VictoryAxis, VictoryLine} from "victory-native"
 
 console.disableYellowBox = true
 
-class Accueil extends React.Component {
+class Stats extends React.Component {
 
     static navigationOptions = (props) => {
         let param = props.navigation.state.params
@@ -84,10 +84,11 @@ class Accueil extends React.Component {
             })
     }
 
-    _displayBloc = (display,global) => {
+    _displayBloc = (display,global,theme) => {
+        let secondStyle = {backgroundColor: theme.boxBackgroundColor}
         if (!display) {
             return (
-                <View style={styles.bloc}>
+                <View style={[styles.bloc, secondStyle]}>
                     <SkeletonPlaceholder>
                         <SkeletonPlaceholder.Item flexDirection="row" alignItems="center" justifyContent={"space-around"} flex={1}>
                             <SkeletonPlaceholder.Item flex={1} height={60} justifyContent={"center"} alignItems={"center"}>
@@ -104,24 +105,25 @@ class Accueil extends React.Component {
             )
         }else{
            return(
-               <View style={styles.bloc}>
+               <View style={[styles.bloc,secondStyle]}>
                     <View style={{flex: 1, justifyContent: "center", alignItems: "center", borderRightWidth: 1, borderRightColor: "rgb(215,215,215)"}}>
                        <Text style={{color: "grey"}}>{i18n.t("statsInfected")}</Text>
-                       <Text style={styles.number}>{global.cases}</Text>
+                       <Text style={[styles.number, {color: theme.textColor}]}>{global.cases}</Text>
                     </View>
                     <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
                         <Text style={{color: "grey"}}>{i18n.t("statsDeaths")}</Text>
-                        <Text style={{fontWeight: "bold", fontSize: 20}}>{global.deaths}</Text>
+                        <Text style={[styles.number, {color: theme.textColor}]}>{global.deaths}</Text>
                     </View>
                </View>
            )
         }
     }
 
-    _displayBloc1 = (display,bloc) => {
+    _displayBloc1 = (display,bloc,theme) => {
+        let secondStyle = {backgroundColor: theme.boxBackgroundColor,elevation: this.props.user.isDarkTheme ? 12 : 3}
         if(!display){
             return(
-                <View style={styles.subBloc1}>
+                <View style={[styles.subBloc1, secondStyle]}>
                     <SkeletonPlaceholder>
                         <SkeletonPlaceholder.Item flexDirection="column" alignItems="center" justifyContent={"space-around"} flex={1}>
                             <SkeletonPlaceholder.Item width={device_width/6.4} height={device_width/6.4} borderRadius={50}/>
@@ -133,7 +135,7 @@ class Accueil extends React.Component {
             )
         }else{
             return (
-                <View style={styles.subBloc1}>
+                <View style={[styles.subBloc1, secondStyle]}>
                     {bloc.icon()}
                     <Text style={[styles.number, {color: bloc.color}]}>{bloc.number}</Text>
                     <Text style={{color: "grey"}}>{bloc.text}</Text>
@@ -146,26 +148,28 @@ class Accueil extends React.Component {
         let {blocs, display, global} = this.state
         let param = this.props.navigation.state.params
         let topText = param ? param.name : i18n.t("statsWorldWide")
+        let theme = this.props.isDarkTheme ? this.props.user.theme.dark : this.props.user.theme.default
+
         return (
             <View style={{flex: 1}}>
-                <ScrollView style={styles.main_container} showsVerticalScrollIndicator={false}>
+                <ScrollView style={[styles.main_container, {backgroundColor: theme.backgroundColor}]} showsVerticalScrollIndicator={false}>
                     <View style={styles.firstZone}>
                         <View style={styles.today}>
                             <Text style={styles.text}>{`${topText} ${i18n.t("statsToday").toLowerCase()}`}</Text>
                             {/*<Text style={styles.text}>{i18n.t("statsToday")}</Text>*/}
                         </View>
-                        {this._displayBloc(display,global)}
+                        {this._displayBloc(display,global,theme)}
                     </View>
                     <View style={styles.secondZone}>
                         <View style={styles.today1}>
-                            <Text style={{fontWeight: "bold"}}>{i18n.t("statsCases")}</Text>
+                            <Text style={{fontWeight: "bold", color: theme.sectionTitleColor}}>{i18n.t("statsCases")}</Text>
                             <View style={{flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
-                                <Text style={{marginRight: 3}}>{i18n.t("statsToday")}</Text>
-                                <AntDesign name={"caretdown"}/>
+                                <Text style={{fontWeight: "bold",marginRight: 3, color: theme.sectionTitleColor}}>{i18n.t("statsToday")}</Text>
+                                <AntDesign name={"caretdown"} color={theme.sectionTitleColor}/>
                             </View>
                         </View>
                         <View style={styles.bloc1}>
-                            {Object.values(blocs).map(bloc => this._displayBloc1(display,bloc))}
+                            {Object.values(blocs).map(bloc => this._displayBloc1(display,bloc,theme))}
                         </View>
                     </View>
                     {/*  <View style={styles.thirdZone}>
@@ -218,7 +222,6 @@ const styles = StyleSheet.create({
     },
     main_container: {
         flex: 1,
-        backgroundColor: "rgb(250,250,250)",
     },
 
     /** First Zone */
@@ -281,8 +284,9 @@ const styles = StyleSheet.create({
 const mapStateToProps =  (state) => {
     return {
         user: state.userReducer,
+        isDarkTheme: state.userReducer.isDarkTheme
     }
 }
 
 
-export  default  connect(mapStateToProps)(Accueil)
+export  default  connect(mapStateToProps)(Stats)

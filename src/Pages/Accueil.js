@@ -42,11 +42,6 @@ import axios from 'axios'
 
 import connect from "react-redux/lib/connect/connect";
 
-import Info from './Info'
-
-import Accueil from './Accueil'
-
-
 
 console.disableYellowBox = true
 
@@ -128,7 +123,7 @@ let precautions = [
 
 
 
-_precautions = () => {
+let _precautions = () => {
 
     return (
 
@@ -180,7 +175,7 @@ let _covid19 = () => {
 
 
 
-_autoControle = () => {
+let _autoControle = () => {
 
     return (
 

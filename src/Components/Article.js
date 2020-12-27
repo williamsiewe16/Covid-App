@@ -19,10 +19,11 @@ class Article extends React.Component {
 
     render() {
         let {title,subtitle, link, image, source, time} = this.props.article
+        let secondStyle = this.props.secondStyle
         return (
-            <TouchableOpacity activeOpacity={0.7} style={styles.bloc} onPress={() => this.props.navigate(link)}>
+            <TouchableOpacity activeOpacity={0.7} style={[styles.bloc, secondStyle]} onPress={() => this.props.navigate(link)}>
                 <View style={styles.zone1}>
-                    <Text style={styles.title}>{title}</Text>
+                    <Text style={[styles.title, {color: secondStyle.color}]}>{title}</Text>
                     <Text style={styles.subtitle} numberOfLines={5}>{subtitle}</Text>
                 </View>
                 <View style={styles.zone2}>

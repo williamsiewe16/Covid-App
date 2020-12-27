@@ -6,7 +6,7 @@ import React from "react";
 const lmaoAPI = "https://corona.lmao.ninja/v3/covid-19"
 
 /** efro-vid api */
-const efroVidAPI = "https://4f1b6f056a97.ngrok.io/api" //"https://efrovid.herokuapp.com/api"
+const efroVidAPI = "https://efrovid.herokuapp.com/api"
 
 
 let apiCalls = {

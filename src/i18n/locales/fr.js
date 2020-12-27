@@ -21,5 +21,8 @@ export default {
     "NewsAfrica": "Afrique",
     "NewsEurope": "Europe",
     "NewsAmerica": "Amerique",
-    "NewsAsia": "Asie"
+    "NewsAsia": "Asie",
+
+    "DrawerDarkTheme": "MODE NUIT",
+    "DrawerLanguage" : "LANGUE"
 }

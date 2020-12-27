@@ -11,6 +11,7 @@ import i18n from "../i18n/i18n";
 import api from "../services/service"
 import {AntDesign, FontAwesome5} from "@expo/vector-icons";
 import HeaderIcon from "../Components/HeaderIcon";
+import connect from "react-redux/lib/connect/connect";
 
 console.disableYellowBox = true
 
@@ -57,9 +58,9 @@ class Articles extends React.Component {
          this._getArticles(text)
     }
 
-    _inProgress = () => (
-        <View style={{flex: 1, justifyContent: "center", alignItems: "center", padding: 20}}>
-            <ActivityIndicator color={"black"} size={"large"}/>
+    _inProgress = (theme) => (
+        <View style={{flex: 1, justifyContent: "center", alignItems: "center", padding: 20, backgroundColor: theme.backgroundColor}}>
+            <ActivityIndicator color={theme.sectionTitleColor} size={"large"}/>
         </View>
     )
 
@@ -83,12 +84,15 @@ class Articles extends React.Component {
 
 
     render() {
+        let theme = this.props.isDarkTheme ? this.props.user.theme.dark : this.props.user.theme.default
+        let secondStyle = {backgroundColor: theme.boxBackgroundColor, color: theme.textColor, elevation: this.props.user.isDarkTheme ? 12 : 3}
         return (
-            !this.state.hasData ? this._inProgress() :
+            !this.state.hasData ? this._inProgress(theme) :
             <FlatList
+                style={{backgroundColor: theme.backgroundColor}}
                 data = {this.state.articles}
                 keyExtractor={(item) => item.id.toString()}
-                renderItem={({item}) => <Article article={item} navigate={this._navigate}/>}
+                renderItem={({item}) => <Article article={item} navigate={this._navigate} secondStyle={secondStyle}/>}
             />
         )
     }
@@ -120,4 +124,13 @@ const styles = StyleSheet.create({
 
 })
 
-export  default Articles
+const mapStateToProps =  (state) => {
+    return {
+        user: state.userReducer,
+        isDarkTheme: state.userReducer.isDarkTheme
+    }
+}
+
+
+export  default  connect(mapStateToProps)(Articles)
+

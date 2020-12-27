@@ -8,7 +8,7 @@ export default {
     "statsCases": "Cases",
     "statsRecovered": "Recovered",
     "statsInfected": "Infected",
-    "statsIntensiveCare": "Infected",
+    "statsIntensiveCare": "Intensive Care",
     "statsDeaths": "Deaths",
     "statsStatistics": "Statistics",
     "statsEvolution": "Evolution",
@@ -21,5 +21,8 @@ export default {
     "NewsAfrica": "Africa",
     "NewsEurope": "Europe",
     "NewsAmerica": "America",
-    "NewsAsia": "Asia"
+    "NewsAsia": "Asia",
+
+    "DrawerDarkTheme": "DARK MODE",
+    "DrawerLanguage" : "LANGUAGE"
 }

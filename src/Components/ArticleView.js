@@ -9,6 +9,7 @@ import {
 import WebView from "react-native-webview"
 import i18n from "../i18n/i18n";
 import HeaderIcon from "../Components/HeaderIcon";
+import connect from "react-redux/lib/connect/connect";
 
 console.disableYellowBox = true
 
@@ -33,9 +34,9 @@ class ArticleView extends React.Component {
 
     render() {
         let url = this.props.navigation.state.params.url
-        console.log(url)
+        let theme = this.props.isDarkTheme ? this.props.user.theme.dark : this.props.user.theme.default
         return (
-            <WebView style={styles.main_container} source={{ uri: url }} />
+            <WebView style={[styles.main_container, {backgroundColor: theme.backgroundColor}]} source={{ uri: url }} />
         )
     }
 }
@@ -48,9 +49,16 @@ const device_height = Dimensions.get('window').height
 const styles = StyleSheet.create({
     main_container: {
         flex: 1,
-        backgroundColor: "rgb(240,240,240)"
     },
 
 })
 
-export  default ArticleView
+const mapStateToProps =  (state) => {
+    return {
+        user: state.userReducer,
+        isDarkTheme: state.userReducer.isDarkTheme
+    }
+}
+
+
+export  default  connect(mapStateToProps)(ArticleView)

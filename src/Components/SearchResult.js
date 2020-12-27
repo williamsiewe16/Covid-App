@@ -31,13 +31,13 @@ class SearchResult extends React.Component {
     }
 
     render() {
-        let result = this.props.result
+        let {result, secondStyle} = this.props
         return (
-            <TouchableOpacity style={styles.bloc} onPress={() => {
+            <TouchableOpacity style={[styles.bloc,secondStyle]} onPress={() => {
                 this.props.navigate(result)
             }} activeOpacity={0.7}>
                 <Image source={{uri: result.image}} style={{width: 60, height: 40, marginBottom: 5}}/>
-                <Text>{result.name}</Text>
+                <Text style={{color: secondStyle.color}}>{result.name}</Text>
             </TouchableOpacity>
         )
     }

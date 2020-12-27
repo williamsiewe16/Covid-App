@@ -28,7 +28,7 @@ const device_height = Dimensions.get('window').height
 
 const icon_width = 7*device_width/100
 
-class Search extends React.Component {
+class CountrySearch extends React.Component {
 
     static navigationOptions = (props) => {
         return {
@@ -87,19 +87,20 @@ class Search extends React.Component {
         </View>
     )
 
-    _displaySearchResults = () => (
+    _displaySearchResults = (theme) => (
         <ScrollView style={styles.blocs_container} showsVerticalScrollIndicator={false}>
-            <Text style={{fontWeight: "bold", letterSpacing: 2, color: "black", marginBottom: 5}}>{i18n.t("countrySearchResults")}</Text>
+            <Text style={{fontWeight: "bold", letterSpacing: 2, color: theme.sectionTitleColor, marginBottom: 5}}>{i18n.t("countrySearchResults")}</Text>
             {this.results.map(result => (
-                <SearchResult result={result} navigate={this._navigate}/>
+                <SearchResult result={result} navigate={this._navigate} secondStyle={{backgroundColor: theme.boxBackgroundColor, color: theme.textColor, elevation: this.props.user.isDarkTheme ? 12 : 3}}/>
             ))}
         </ScrollView>
 
     )
 
     render() {
+        let theme = this.props.isDarkTheme ? this.props.user.theme.dark : this.props.user.theme.default
         return (
-            <View style={styles.main_container}>
+            <View style={[styles.main_container, {backgroundColor: theme.backgroundColor}]}>
                 <View style={styles.searchZone}>
                     <SearchBar
                         placeholder={i18n.t("countrySearchBarPlaceholder")}
@@ -118,7 +119,7 @@ class Search extends React.Component {
                     {
                         this.state.isLoading ? this._inProgress()
                             : !this.state.hasContent ? <View></View>
-                            : this.results.length == 0 ? this._noResult() : this._displaySearchResults()
+                            : this.results.length == 0 ? this._noResult() : this._displaySearchResults(theme)
                     }
                 </View>
             </View>
@@ -131,7 +132,7 @@ class Search extends React.Component {
 
 const styles = StyleSheet.create({
     main_container: {
-        backgroundColor: "rgb(250,250, 250)",
+        backgroundColor: "black",//"rgb(250,250, 250)",
         padding: 15, flex: 1
     },
     loading_container : {
@@ -161,5 +162,12 @@ const styles = StyleSheet.create({
     },
 })
 
+const mapStateToProps =  (state) => {
+    return {
+        user: state.userReducer,
+        isDarkTheme: state.userReducer.isDarkTheme
+    }
+}
 
-export  default Search
+
+export  default  connect(mapStateToProps)(CountrySearch)

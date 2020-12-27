@@ -5,7 +5,7 @@ import {createDrawerNavigator, DrawerNavigatorItems} from "react-navigation-draw
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs'
 import React from 'react'
 import {Text, Image, Dimensions, StyleSheet, View, SafeAreaView} from 'react-native'
-
+import myDrawer from "./Drawer"
 import Accueil from "../Pages/Accueil";
 import Onboarding from "../Pages/Onboarding";
 
@@ -18,13 +18,6 @@ import ArticleView from "../Components/ArticleView"
 import Stats from "../Pages/Stats"
 import CountrySearch from "../Pages/CountrySearch"
 
-import { FontAwesome, Ionicons } from '@expo/vector-icons'
-import {
-    Switch, Badge, Modal, Paragraph
-} from "react-native-paper"
-import DrawerSection from "react-native-paper/src/components/Drawer/DrawerSection";
-import DrawerItem from "react-native-paper/src/components/Drawer/DrawerItem";
-import HeaderIcon from "../Components/HeaderIcon";
 
 const device_width = Dimensions.get('window').width
 const icon_width = 7*device_width/100
@@ -64,29 +57,9 @@ let InfosNavigation = createStackNavigator({
 
 let AppNavigation = createSwitchNavigator({
     test: createDrawerNavigator({
-        stats: StatsNavigation, news: Accueil /*NewsNavigation*/, infos: InfosNavigation,
+        stats: StatsNavigation, news: NewsNavigation, infos: InfosNavigation,
     }, {
-        contentComponent: props => (
-            <SafeAreaView style={{flex: 1}}>
-                <View style={{justifyContent: "center", alignItems: "center", padding: 20}}>
-                    <Image source={require('../../assets/images/stats.png')} style={styles.logo}/>
-                </View>
-                <ScrollView contentContainerStyle={{flex: 1}}>
-                    <DrawerSection>
-                        <DrawerItem icon={({color, size}) => (<Ionicons name="ios-stats" size={size}  color="black" />)} label={"Stats"} onPress={() => {props.navigation.navigate("stats")}}></DrawerItem>
-                        <DrawerItem icon={({color, size}) => (<FontAwesome name={"newspaper-o"} size={size-7}  color="black" />)} label={"News"} onPress={() => {props.navigation.navigate("news")}}></DrawerItem>
-                        <DrawerItem icon={({color,size}) => (<Ionicons name="md-information-circle-outline" size={size} color="black" />)} label={"Infos"}  onPress={() => {props.navigation.navigate("infos")}}></DrawerItem>
-                    </DrawerSection>
-                    <DrawerSection title={"Preferences"}>
-                        <Text>Dark Theme</Text>
-                        <Switch value={"e"}/>
-                    </DrawerSection>
-                </ScrollView>
-                <View>
-                    <Text style={{flex: 1}}>dghfg</Text>
-                </View>
-            </SafeAreaView>
-        ),
+        contentComponent: myDrawer,
         contentOptions: {
             labelStyle: {fontFamily: "Raleway-Regular"},
             activeTintColor: "red",
@@ -100,10 +73,11 @@ let AppNavigation = createSwitchNavigator({
 })
 
 
+
+
 const styles = StyleSheet.create({
     logo: {
         width: device_width/3, height: device_width/3
     },
 })
-
 export default createAppContainer(AppNavigation)

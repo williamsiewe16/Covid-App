@@ -27,6 +27,7 @@ class Onboarding extends React.Component {
 
     constructor(props) {
         super(props)
+        console.log(this.props.user.firstLaunch)
         if(!this.props.user.firstLaunch) this.props.navigation.navigate("Accueil")
 
         this.pages=[{

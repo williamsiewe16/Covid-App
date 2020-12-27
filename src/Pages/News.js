@@ -8,6 +8,7 @@ import {
 
 import HeaderIcon from "../Components/HeaderIcon";
 import i18n from "../i18n/i18n";
+import connect from "react-redux/lib/connect/connect";
 
 console.disableYellowBox = true
 
@@ -45,12 +46,14 @@ class News extends React.Component {
 
     render() {
         let places = this.state.places
+        let theme = this.props.isDarkTheme ? this.props.user.theme.dark : this.props.user.theme.default
+        let secondStyle = {backgroundColor: theme.boxBackgroundColor, color: theme.textColor, elevation: this.props.user.isDarkTheme ? 12 : 3}
         return (
-            <View style={styles.main_container}>
+            <View style={[styles.main_container, {backgroundColor: theme.backgroundColor}]}>
                 {places.map(place => (
-                    <TouchableOpacity style={styles.bloc} activeOpacity={0.8} onPress={() => this._navigate(place.text)}>
-                        <Image source={place.image} style={{width: 60, height: 60}}/>
-                        <Text>{place.name}</Text>
+                    <TouchableOpacity style={[styles.bloc, secondStyle]} activeOpacity={0.8} onPress={() => this._navigate(place.text)}>
+                        <Image source={place.image} style={{width: 60, height: 60, marginBottom: 5}}/>
+                        <Text style={{color: secondStyle.color}}>{place.name}</Text>
                     </TouchableOpacity>
                 ))}
             </View>
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
     },
     main_container: {
         flex: 1,
-        backgroundColor: "rgb(240,240,240)", padding: 30
+        backgroundColor: "black", /*rgb(240,240,240)",*/ padding: 30
     },
     bloc: {
         backgroundColor: "white", padding: 10, elevation: 8, margin: 6,
@@ -84,5 +87,12 @@ const styles = StyleSheet.create({
 
 })
 
+const mapStateToProps =  (state) => {
+    return {
+        user: state.userReducer,
+        isDarkTheme: state.userReducer.isDarkTheme
+    }
+}
 
-export  default News
+
+export  default  connect(mapStateToProps)(News)
