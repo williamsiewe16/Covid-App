@@ -7,17 +7,18 @@ import React, {useState} from "react";
 import connect from "react-redux/lib/connect/connect";
 import DropDownPicker from 'react-native-dropdown-picker'
 import i18n from "../i18n/i18n";
-import CodePush from 'react-native-code-push';
+import RNRestart from 'react-native-restart'
 
 const device_width = Dimensions.get('window').width
 
 let myDrawer = props => {
     let changeTheme = () => props.dispatch({type: "CHANGE_THEME"})
     let changeLanguage = (locale) => {
-        i18n.locale = locale
-        CodePush.restartApp();
+        props.dispatch({type: "CHANGE_LANGUAGE", value: {locale: locale}})
+        RNRestart.Restart();
     }
     let theme = props.isDarkTheme ? props.user.theme.dark : props.user.theme.default
+    i18n.locale = props.user.locale
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: theme.drawerBackgroundColor, paddingRight: 8}}>
             <View style={{justifyContent: "center", alignItems: "center", padding: 20}}>
@@ -41,7 +42,7 @@ let myDrawer = props => {
                                 {label: '', value: 'en', icon: () => <Image source={require("../../assets/images/us.png")} style={{width: 30, height: 20}}/>},
                                 {label: '', value: 'fr', icon: () => <Image source={require("../../assets/images/fr.png")} style={{width: 30, height: 20}}/>},
                             ]}
-                            defaultValue={i18n.defaultLocale}
+                            defaultValue={props.user.locale}
                             containerStyle={{height: 40}}
                             style={{backgroundColor: '#fafafa'}}
                             itemStyle={{

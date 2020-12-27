@@ -3,6 +3,7 @@ package com.projettransverse.groupe304.efrovid;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativerestart.RestartPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -51,6 +52,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RestartPackage(),
             new RNCWebViewPackage(),
             new RNI18nPackage(),
             new LinearGradientPackage(),

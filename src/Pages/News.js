@@ -31,11 +31,11 @@ class News extends React.Component {
         this.state = {
             search: '',
             places: [
-                {name: i18n.t("NewsFrance"), image: require('../../assets/images/stats.png'), text: "coronavirus en France"},
-                {name: i18n.t("NewsAfrica"), image: require('../../assets/images/stats.png'), text: "coronavirus en Afrique"},
-                {name: i18n.t("NewsEurope"), image: require('../../assets/images/stats.png'), text: "coronavirus en Europe"},
-                {name: i18n.t("NewsAmerica"), image: require('../../assets/images/stats.png'), text: "coronavirus en Amerique"},
-                {name: i18n.t("NewsAsia"), image: require('../../assets/images/stats.png'), text: "coronavirus en Asie"},
+                {name: i18n.t("NewsFrance"), image: require('../../assets/images/fr.png'), text: "coronavirus en France", height: 40},
+                {name: i18n.t("NewsAfrica"), image: require('../../assets/images/world.png'), text: "coronavirus en Afrique"},
+                {name: i18n.t("NewsEurope"), image: require('../../assets/images/world.png'), text: "coronavirus en Europe"},
+                {name: i18n.t("NewsAmerica"), image: require('../../assets/images/world.png'), text: "coronavirus en Amerique"},
+                {name: i18n.t("NewsAsia"), image: require('../../assets/images/world.png'), text: "coronavirus en Asie"},
             ],
         }
     }
@@ -52,7 +52,7 @@ class News extends React.Component {
             <View style={[styles.main_container, {backgroundColor: theme.backgroundColor}]}>
                 {places.map(place => (
                     <TouchableOpacity style={[styles.bloc, secondStyle]} activeOpacity={0.8} onPress={() => this._navigate(place.text)}>
-                        <Image source={place.image} style={{width: 60, height: 60, marginBottom: 5}}/>
+                        <Image source={place.image} style={{width: place.width? place.width:60, height: place.height? place.height:60, marginBottom: 5}}/>
                         <Text style={{color: secondStyle.color}}>{place.name}</Text>
                     </TouchableOpacity>
                 ))}
