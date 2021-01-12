@@ -18,6 +18,9 @@ import ArticleView from "../Components/ArticleView"
 import Stats from "../Pages/Stats"
 import CountrySearch from "../Pages/CountrySearch"
 
+/** Onglets Infos */
+import Infos from "../Pages/Infos"
+import InfoView from "../Components/InfoView";
 
 const device_width = Dimensions.get('window').width
 const icon_width = 7*device_width/100
@@ -45,18 +48,16 @@ let NewsNavigation = createStackNavigator({
 
 let InfosNavigation = createStackNavigator({
     Infos: {
-        screen: Accueil,
-        navigationOptions: {
-            headerTitle: "ACCUEIL",
-            headerStyle : {backgroundColor: "#4aaf78", elevation: 0},
-            headerTitleStyle : {color: "white"}
-        }
+        screen: Infos,
+    },
+    InfoView: {
+        screen: InfoView,
     },
 }, {headerLayoutPreset : 'center'})
 
 
 let AppNavigation = createSwitchNavigator({
-    test: createDrawerNavigator({
+    Home: createDrawerNavigator({
         stats: StatsNavigation, news: NewsNavigation, infos: InfosNavigation,
     }, {
         contentComponent: myDrawer,
@@ -69,7 +70,7 @@ let AppNavigation = createSwitchNavigator({
     onBoarding: Onboarding,
 },    {
     defaultNavigationOptions: {},
-    initialRouteName: 'test'
+    initialRouteName: 'onBoarding'
 })
 
 

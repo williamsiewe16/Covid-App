@@ -7,6 +7,7 @@ import React, {useState} from "react";
 import connect from "react-redux/lib/connect/connect";
 import DropDownPicker from 'react-native-dropdown-picker'
 import i18n from "../i18n/i18n";
+import {fontFamily} from "../../App";
 import RNRestart from 'react-native-restart'
 
 const device_width = Dimensions.get('window').width
@@ -18,6 +19,8 @@ let myDrawer = props => {
         RNRestart.Restart();
     }
     let theme = props.isDarkTheme ? props.user.theme.dark : props.user.theme.default
+    let drawerSectionTheme = {fonts: {medium: {fontFamily: fontFamily}}, colors: {text: theme.sectionTitleColor}}
+    let drawerItemTheme = {fonts: {medium: {fontFamily: fontFamily}}, colors: {text: theme.textColor}}
     i18n.locale = props.user.locale
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: theme.drawerBackgroundColor, paddingRight: 8}}>
@@ -26,17 +29,17 @@ let myDrawer = props => {
             </View>
             <ScrollView contentContainerStyle={{flex: 1}}>
                 <DrawerSection>
-                    <DrawerItem icon={({color, size}) => (<Ionicons name="ios-stats" size={size}  color={theme.textColor} />)} label={"STATS"} theme={{colors: {text: theme.textColor}}} onPress={() => {props.navigation.navigate("stats")}}></DrawerItem>
-                    <DrawerItem icon={({color, size}) => (<FontAwesome name={"newspaper-o"} size={size-7}  color={theme.textColor} />)} label={"NEWS"} theme={{colors: {text: theme.textColor}}} onPress={() => {props.navigation.navigate("news")}}></DrawerItem>
-                    <DrawerItem icon={({color,size}) => (<Ionicons name="md-information-circle-outline" size={size} color={theme.textColor} />)} label={"INFOS"} theme={{colors: {text: theme.textColor}}} onPress={() => {props.navigation.navigate("infos")}}></DrawerItem>
+                    <DrawerItem icon={({color, size}) => (<Ionicons name="ios-stats" size={size}  color={theme.textColor} />)} label={"STATS"} theme={drawerItemTheme} onPress={() => {props.navigation.navigate("stats")}}></DrawerItem>
+                    <DrawerItem icon={({color, size}) => (<FontAwesome name={"newspaper-o"} size={size-7}  color={theme.textColor} />)} label={"NEWS"} theme={drawerItemTheme} onPress={() => {props.navigation.navigate("news")}}></DrawerItem>
+                    <DrawerItem icon={({color,size}) => (<Ionicons name="md-information-circle-outline" size={size} color={theme.textColor} />)} label={"INFOS"} theme={drawerItemTheme} onPress={() => {props.navigation.navigate("infos")}}></DrawerItem>
                 </DrawerSection>
-                <DrawerSection title={"Preferences"} theme={{colors: {text: theme.sectionTitleColor}}}>
+                <DrawerSection title={"Preferences"} theme={drawerSectionTheme}>
                     <View style={styles.style1}>
-                        <DrawerItem icon={({color, size}) => (<FontAwesome name="moon-o" size={size} color={theme.textColor} />)} label={i18n.t("DrawerDarkTheme")} theme={{colors: {text: theme.textColor}}}></DrawerItem>
+                        <DrawerItem icon={({color, size}) => (<FontAwesome name="moon-o" size={size} color={theme.textColor} />)} label={i18n.t("DrawerDarkTheme")} theme={drawerItemTheme}></DrawerItem>
                         <Switch value={props.isDarkTheme} onValueChange={() => changeTheme()}/>
                     </View>
                     <View style={styles.style1}>
-                        <DrawerItem icon={({color, size}) => (<FontAwesome name="language" size={size} color={theme.textColor} />)} label={i18n.t("DrawerLanguage")} theme={{colors: {text: theme.textColor}}}></DrawerItem>
+                        <DrawerItem icon={({color, size}) => (<FontAwesome name="language" size={size} color={theme.textColor} />)} label={i18n.t("DrawerLanguage")} theme={drawerItemTheme}></DrawerItem>
                         <DropDownPicker
                             items={[
                                 {label: '', value: 'en', icon: () => <Image source={require("../../assets/images/us.png")} style={{width: 30, height: 20}}/>},
@@ -53,7 +56,7 @@ let myDrawer = props => {
                         />
                     </View>
                 </DrawerSection>
-                <DrawerSection title={"Contact"} theme={{colors: {text: theme.sectionTitleColor}}}>
+                <DrawerSection title={"Contact"} theme={drawerSectionTheme}>
                     <View style={{justifyContent: "center", flexDirection: "row"}}>
                         <TouchableOpacity activeOpacity={1} onPress={() => Linking.openURL("https://www.facebook.com")}>
                             <Entypo name="facebook" size={device_width/11} color="#3b5998" style={{margin: 5}}/>

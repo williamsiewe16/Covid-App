@@ -28,7 +28,7 @@ class Onboarding extends React.Component {
     constructor(props) {
         super(props)
         console.log(this.props.user.firstLaunch)
-        if(!this.props.user.firstLaunch) this.props.navigation.navigate("Accueil")
+        if(!this.props.user.firstLaunch) this.props.navigation.navigate("Home")
 
         this.pages=[{
             backgroundColor: '#ffffff',
@@ -50,7 +50,7 @@ class Onboarding extends React.Component {
 
     _onDone = () => {
         this.props.dispatch({type: "FIRST_LAUNCH"})
-        this.props.navigation.navigate('Accueil')
+        this.props.navigation.navigate('Home')
     }
 
     render() {

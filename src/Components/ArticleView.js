@@ -17,9 +17,6 @@ class ArticleView extends React.Component {
 
     static navigationOptions = (props) => {
         return {
-            /* headerLeft: () => (<HeaderIcon icon={icon} style={style} action={() => {
-                 props.navigation.openDrawer()
-             }}/>),*/
             headerRight: () => (<HeaderIcon icon={require('../../assets/images/virus.png')} action={() => {}}/>),
             headerTitle: "NEWS",
             headerStyle : {backgroundColor: "red", elevation: 0},

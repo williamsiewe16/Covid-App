@@ -10,10 +10,12 @@ import { PersistGate } from 'redux-persist/es/integration/react'
 import { setCustomText } from 'react-native-global-props';
 console.disableYellowBox = true
 
+export const fontFamily = "Raleway-Regular"
+
 export default function App() {
     const customTextProps = {
         style: {
-            fontFamily: "Raleway-Regular",
+            fontFamily: fontFamily,
             color: "black"
         }
     }

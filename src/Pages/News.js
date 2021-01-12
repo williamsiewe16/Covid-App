@@ -16,9 +16,6 @@ class News extends React.Component {
 
     static navigationOptions = (props) => {
         return {
-           /* headerLeft: () => (<HeaderIcon icon={icon} style={style} action={() => {
-                props.navigation.openDrawer()
-            }}/>),*/
             headerRight: () => (<HeaderIcon icon={require('../../assets/images/virus.png')} action={() => {}}/>),
             headerTitle: "NEWS",
             headerStyle : {backgroundColor: "red", elevation: 0},
@@ -31,11 +28,11 @@ class News extends React.Component {
         this.state = {
             search: '',
             places: [
-                {name: i18n.t("NewsFrance"), image: require('../../assets/images/fr.png'), text: "coronavirus en France", height: 40},
-                {name: i18n.t("NewsAfrica"), image: require('../../assets/images/world.png'), text: "coronavirus en Afrique"},
-                {name: i18n.t("NewsEurope"), image: require('../../assets/images/world.png'), text: "coronavirus en Europe"},
-                {name: i18n.t("NewsAmerica"), image: require('../../assets/images/world.png'), text: "coronavirus en Amerique"},
-                {name: i18n.t("NewsAsia"), image: require('../../assets/images/world.png'), text: "coronavirus en Asie"},
+                {name: i18n.t("NewsFrance"), image: require('../../assets/images/fr.png'), text: "coronavirus in France", height: 40},
+                {name: i18n.t("NewsAfrica"), image: require('../../assets/images/world.png'), text: "coronavirus in Africa"},
+                {name: i18n.t("NewsEurope"), image: require('../../assets/images/world.png'), text: "coronavirus in Europe"},
+                {name: i18n.t("NewsAmerica"), image: require('../../assets/images/world.png'), text: "coronavirus in America"},
+                {name: i18n.t("NewsAsia"), image: require('../../assets/images/world.png'), text: "coronavirus in Asia"},
             ],
         }
     }
