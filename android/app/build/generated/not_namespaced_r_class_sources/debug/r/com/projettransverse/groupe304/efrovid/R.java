@@ -184,7 +184,7 @@ public final class R {
     /**
      * An optional layout to be used as an action view.
      * See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more infos.
+     * for more info.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -331,7 +331,7 @@ public final class R {
      * The name of an optional ActionProvider class to instantiate an action view
      * and perform operations such as default action for that menu item.
      * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-     * for more infos.
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -339,7 +339,7 @@ public final class R {
     /**
      * The name of an optional View class to instantiate and use as an
      * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more infos.
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -5377,7 +5377,7 @@ public final class R {
     public static final int icon_only=0x7f08008e;
     public static final int ifRoom=0x7f08008f;
     public static final int image=0x7f080090;
-    public static final int infos=0x7f080091;
+    public static final int info=0x7f080091;
     public static final int italic=0x7f080092;
     public static final int item_touch_helper_previous_elevation=0x7f080093;
     public static final int labeled=0x7f080094;
@@ -15494,7 +15494,7 @@ public final class R {
      * @attr description
      * An optional layout to be used as an action view.
      * See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more infos.
+     * for more info.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15510,7 +15510,7 @@ public final class R {
      * The name of an optional ActionProvider class to instantiate an action view
      * and perform operations such as default action for that menu item.
      * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-     * for more infos.
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15523,7 +15523,7 @@ public final class R {
      * @attr description
      * The name of an optional View class to instantiate and use as an
      * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-     * for more infos.
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;

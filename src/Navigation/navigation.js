@@ -61,10 +61,11 @@ let AppNavigation = createSwitchNavigator({
         stats: StatsNavigation, news: NewsNavigation, infos: InfosNavigation,
     }, {
         contentComponent: myDrawer,
+        drawerWidth: 2.2*device_width/3,
         contentOptions: {
             labelStyle: {fontFamily: "Raleway-Regular"},
             activeTintColor: "red",
-            activeBackgroundColor: 'red'
+            activeBackgroundColor: 'red',
         }
     }),
     onBoarding: Onboarding,

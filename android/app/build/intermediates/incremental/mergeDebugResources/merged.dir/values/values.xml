@@ -4573,18 +4573,18 @@
 
         <!-- An optional layout to be used as an action view.
              See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more infos. -->
+             for more info. -->
         <attr format="reference" name="actionLayout"/>
 
         <!-- The name of an optional View class to instantiate and use as an
              action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
-             for more infos. -->
+             for more info. -->
         <attr format="string" name="actionViewClass"/>
 
         <!-- The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.
              See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
-             for more infos. -->
+             for more info. -->
         <attr format="string" name="actionProviderClass"/>
 
         <!-- The content description associated with the item. -->

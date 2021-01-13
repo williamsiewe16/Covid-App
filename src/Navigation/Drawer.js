@@ -23,11 +23,11 @@ let myDrawer = props => {
     let drawerItemTheme = {fonts: {medium: {fontFamily: fontFamily}}, colors: {text: theme.textColor}}
     i18n.locale = props.user.locale
     return (
-        <SafeAreaView style={{flex: 1, backgroundColor: theme.drawerBackgroundColor, paddingRight: 8}}>
-            <View style={{justifyContent: "center", alignItems: "center", padding: 20}}>
-                <Image source={require('../../assets/images/stats.png')} style={styles.logo}/>
+        <SafeAreaView style={{flex: 1, backgroundColor: theme.drawerBackgroundColor}}>
+            <View style={{justifyContent: "center", alignItems: "center",  marginBottom: 8, position: 'relative'}}>
+                <Image source={require('../../assets/images/covid.png')} style={styles.logo} blurRadius={1.5}/>
             </View>
-            <ScrollView contentContainerStyle={{flex: 1}}>
+            <ScrollView contentContainerStyle={{flex: 1, paddingRight: 8}}>
                 <DrawerSection>
                     <DrawerItem icon={({color, size}) => (<Ionicons name="ios-stats" size={size}  color={theme.textColor} />)} label={"STATS"} theme={drawerItemTheme} onPress={() => {props.navigation.navigate("stats")}}></DrawerItem>
                     <DrawerItem icon={({color, size}) => (<FontAwesome name={"newspaper-o"} size={size-7}  color={theme.textColor} />)} label={"NEWS"} theme={drawerItemTheme} onPress={() => {props.navigation.navigate("news")}}></DrawerItem>
@@ -70,16 +70,13 @@ let myDrawer = props => {
                     </View>
                 </DrawerSection>
             </ScrollView>
-            <View>
-                <Text style={{flex: 1}}>dghfg</Text>
-            </View>
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     logo: {
-        width: device_width/3, height: device_width/3
+        width: 2.2*device_width/3, height: 1.2*device_width/3,
     },
     style1: {
         flexDirection: "row", justifyContent: "space-between", alignItems: "center"

@@ -726,7 +726,7 @@ public final class R {
         public static final int icon = 0x7f08008c;
         public static final int icon_group = 0x7f08008d;
         public static final int image = 0x7f080090;
-        public static final int infos = 0x7f080091;
+        public static final int info = 0x7f080091;
         public static final int italic = 0x7f080092;
         public static final int line1 = 0x7f080098;
         public static final int line3 = 0x7f080099;
