@@ -81,9 +81,9 @@ class CountrySearch extends React.Component {
         </View>
     )
 
-    _noResult = () => (
+    _noResult = (theme) => (
         <View style={{flex: 1, justifyContent: "center", alignItems: "center", padding: 20}}>
-            <Text>{i18n.t('countrySearchNoResult')}</Text>
+            <Text style={{color: theme.textColor}}>{i18n.t('countrySearchNoResult')}</Text>
         </View>
     )
 
@@ -119,7 +119,7 @@ class CountrySearch extends React.Component {
                     {
                         this.state.isLoading ? this._inProgress()
                             : !this.state.hasContent ? <View></View>
-                            : this.results.length == 0 ? this._noResult() : this._displaySearchResults(theme)
+                            : this.results.length == 0 ? this._noResult(theme) : this._displaySearchResults(theme)
                     }
                 </View>
             </View>
